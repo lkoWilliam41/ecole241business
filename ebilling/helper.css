@@ -1,0 +1,1338 @@
+
+/* HELPER CLASS
+ * -------------------------- */
+
+/* FA based classes */
+
+/*! Modified from font-awesome helper CSS classes - PIXEDEN
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (CSS: MIT License)
+ */
+
+/* makes the font 33% larger relative to the icon container */
+.pe-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.pe-2x {
+  font-size: 2em;
+}
+.pe-3x {
+  font-size: 3em;
+}
+.pe-4x {
+  font-size: 4em;
+}
+.pe-5x {
+  font-size: 5em;
+}
+.pe-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.pe-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+.pe-ul > li {
+  position: relative;
+}
+.pe-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+.pe-li.pe-lg {
+  left: -1.8571428571428572em;
+}
+.pe-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.pe.pull-left {
+  margin-right: .3em;
+}
+.pe.pull-right {
+  margin-left: .3em;
+}
+.pe-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.pe-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.pe-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.pe-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.pe-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.pe-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.pe-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.pe-stack-1x,
+.pe-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.pe-stack-1x {
+  line-height: inherit;
+}
+.pe-stack-2x {
+  font-size: 2em;
+}
+.pe-inverse {
+  color: #ffffff;
+}
+
+/* Payment Page */
+main {
+  background-color: #f9fbfd;
+}
+.payment-blocks .block {
+  min-height: calc(100vh - 98px - 74px - 4rem);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  transition: visibility 0s, opacity 0.25s linear;
+}
+.payment-blocks .merchant-logo {
+  -webkit-box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.075);
+  border: 1px solid #e9f1f7;
+  border-radius: 16px 0 0 0;
+  padding: 0;
+}
+.payment-blocks .merchant-logo .merchant-name {
+  background-image: url('../img/payments/merchant.png');
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 33px 50px 26px 50px;
+  border-radius: 16px 0 0 0;
+}
+.payment-blocks .merchant-logo .merchant-name p {
+  margin: 0 0 17px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+}
+.payment-blocks .merchant-logo .merchant-name h3 {
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 600;
+}
+.payment-blocks .merchant-logo .merchant-name p.amount-label {
+  display: none;
+}
+.payment-blocks .merchant-logo .merchant-name h3.amount {
+  display: none;
+}
+.payment-blocks .merchant-logo .merchant-name .hr {
+  display: none;
+}
+.payment-blocks .merchant-logo .merchant-amount {
+  padding: 63px 30px;
+  text-align: center;
+}
+.payment-blocks .merchant-logo .merchant-amount .amount-label {
+  letter-spacing: 0.08em;
+  color: #CECECE;
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.payment-blocks .merchant-logo .merchant-amount .amount {
+  letter-spacing: 0.08em;
+  color: #000000;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 45px;
+}
+.payment-blocks .merchant-logo .merchant-amount .amount span {
+  font-size: 80%;
+}
+.payment-blocks .merchant-logo .merchant-amount .fee-label {
+  letter-spacing: 0.08em;
+  color: #CECECE;
+  margin: 0 0 18px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.payment-blocks .merchant-logo .merchant-amount .fee {
+  letter-spacing: 0.08em;
+  color: #000000;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: -15px;
+}
+.payment-blocks .merchant-logo .merchant-amount .fee span {
+  font-size: 80%;
+}
+.payment-blocks .merchant-logo .merchant-amount .method-label {
+  letter-spacing: 0.08em;
+  color: #6A6A6A;
+  margin: 35px 0 12px;
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #E3E3E3;
+}
+.payment-blocks .merchant-logo .merchant-amount .method-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -38px;
+}
+.payment-blocks .merchant-logo .merchant-amount .method-img {
+  display: inline-block;
+  height: 30px;
+}
+.payment-blocks .merchant-logo .merchant-amount .method-img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.payment-blocks .merchant-logo .merchant-amount .method-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-left: 14px;
+}
+.payment-blocks .merchant-logo .merchant-amount .qrcode {
+  text-align: center;
+}
+.payment-blocks .merchant-logo .merchant-amount #qrcode {
+  display: inline-block;
+  margin: 0 auto;
+}
+.payment-blocks .operators {
+  height: calc(100vh - 98px - 74px - 4rem - 97px);
+  background: #F7F7F7;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #E3E3E3;
+  padding: 0;
+}
+.payment-blocks .operators .operators-title {
+  padding: 33px 50px;
+  border-bottom: 1px solid #E3E3E3;
+}
+.payment-blocks .operators .operators-title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0;
+}
+.payment-blocks .operators .operators-list {
+  height: calc(100% - 97px);
+  overflow: auto;
+  padding: 12px 35px 0 50px;
+}
+.payment-blocks .operators .operator-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 60px 20px 20px;
+  border: 1px solid #E3E3E3;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+.payment-blocks .operators .operator-item .operator-item-img {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  min-width: 60px;
+  max-width: 160px;
+  margin-right: 45px;
+}
+.payment-blocks .operators .operator-item .operator-item-img img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.payment-blocks .operators .operator-item .operator-item-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.payment-blocks .operators .operator-item .operator-item-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #D4D4D4;
+  border-radius: 50%;
+  text-align: center;
+}
+.payment-blocks .operators .operator-item .operator-item-check i {
+  color: #D4D4D4;
+  font-size: 14px;
+}
+.payment-blocks .operators .operator-item:hover {
+  -webkit-box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.075);
+}
+.payment-blocks .operators .operator-item:hover .operator-item-check,
+.payment-blocks .operators .operator-item.checked .operator-item-check {
+  background: #3AD664;
+  border-color: #3AD664;
+}
+.payment-blocks .operators .operator-item:hover .operator-item-check i,
+.payment-blocks .operators .operator-item.checked .operator-item-check i {
+  color: #FFF;
+}
+.payment-blocks #step1-block .merchant-logo,
+.payment-blocks #step1-block .operators {
+  min-height: 578px;
+}
+.payment-blocks .selected-operator {
+  padding: 79px 114px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 16px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 0px 5px 0px 0px;
+}
+.payment-blocks .selected-operator-ussd-pull {
+  padding: 79px 100px;
+}
+.payment-blocks .selected-operator .selected-operator-title {
+  padding-bottom: 25px;
+}
+.payment-blocks .selected-operator .selected-operator-title p {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  color: #3A3A3A;
+  margin: 0;
+}
+.payment-blocks .selected-operator .selected-operator-title p.muted {
+  font-size: 26px;
+  font-weight: 300;
+  color: #8A8A8A;
+}
+.payment-blocks .selected-operator .selected-operator-title-hr {
+  background: #CECECE;
+  height: 1px;
+  width: 84px;
+}
+.payment-blocks .selected-operator .selected-operator-detail-ussd-guide {
+  padding-top: 40px;
+  padding-left: 20px;
+  list-style: decimal;
+  word-break: break-word;
+}
+.payment-blocks .selected-operator .selected-operator-detail-ussd-guide li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #5B5B5B;
+  margin: 0 0 30px;
+  padding-left: 10px;
+}
+.payment-blocks .selected-operator .selected-operator-logo {
+  display: inline-flex;
+  align-items: center;
+  height: 70px;
+  max-width: 400px;
+  margin-top: 70px;
+}
+.payment-blocks .selected-operator-ussd-push .selected-operator-logo {
+  margin-top: 48px;
+}
+.payment-blocks .selected-operator .selected-operator-logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.payment-blocks .selected-operator .selected-operator-name {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.payment-blocks .selected-operator-ussd-push .selected-operator-name {
+  margin-top: 20px;
+}
+.payment-blocks .selected-operator-ussd-push form,
+.payment-blocks .merchant-fields form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.payment-blocks .selected-operator-ussd-push form .input-group-text,
+.payment-blocks .merchant-fields form .input-group-text {
+  width: 54px;
+  background: #F5F5F5;
+  border: 1px solid #CECECE;
+  color: #6A6A6A;
+  justify-content: center;
+}
+.payment-blocks .selected-operator-ussd-push form input.form-control,
+.payment-blocks .merchant-fields form .form-control {
+  height: 54px;
+  background: #F5F5F5;
+  border-color: #CECECE;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0.375rem 1.5rem;
+  -webkit-appearance: none;
+}
+.payment-blocks .selected-operator-ussd-push form input.form-control-sm,
+.payment-blocks .merchant-fields form .form-control-sm {
+  height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.5rem;
+}
+.payment-blocks .selected-operator-ussd-push form input.form-control[type="checkbox"],
+.payment-blocks .merchant-fields form .form-control[type="checkbox"] {
+  display: inline;
+  width: 16px;
+  height: 16px;
+  background: #F5F5F5;
+  border-color: #CECECE;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0;
+  -webkit-appearance: auto;
+}
+.payment-blocks .merchant-fields form select.form-control {
+  background: #F5F5F5;
+  border-color: #CECECE;
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-appearance: auto;
+}
+.payment-blocks .selected-operator-ussd-push form.was-validated .form-control:invalid,
+.payment-blocks .selected-operator-ussd-push form.was-validated .form-control.is-invalid,
+.payment-blocks .merchant-fields form.was-validated .form-control:invalid,
+.payment-blocks .merchant-fields form.was-validated .form-control.is-invalid {
+  border-color: #dc3545;
+}
+.payment-blocks .total {
+  position: relative;
+  background: #F7F7F7;
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 0px 0px 3px 3px;
+  padding: 30px;
+}
+.payment-blocks .total .fee-info {
+  display: none;
+}
+.payment-blocks .total .total-label {
+  letter-spacing: 0.08em;
+  color: #6A6A6A;
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.payment-blocks .total .total-amount {
+  letter-spacing: 0.08em;
+  color: #000;
+  font-size: 34px;
+  line-height: 1.1;
+  margin: 0;
+}
+.payment-blocks .total .total-amount span {
+  font-size: 80%;
+}
+.payment-blocks .actions {
+  margin-top: 40px;
+}
+.payment-blocks .actions-ussd {
+  display: none;
+}
+.payment-blocks .actions .btn-success {
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  padding: 20px;
+  background: #3AD664;
+  border-color: #3AD664;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.payment-blocks #error-block .error-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  color: #2A2A2A;
+}
+.payment-blocks #error-block .error-title span {
+  font-size: 90%;
+}
+.payment-blocks #error-block .error-title .merchant-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-blocks #error-block .error-title .merchant-name i {
+  color: #FF3F3F;
+}
+.payment-blocks #error-block .error-title .merchant-name p {
+  margin: 0;
+  margin-left: 32px;
+  font-weight: 500;
+}
+.payment-blocks #error-block .error-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+  border-left: 1px solid #BBBBBB;
+}
+.payment-blocks #error-block .error-total .total-label {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.08em;
+  color: #5A5A5A;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.payment-blocks #error-block .error-total .total-amount {
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin-bottom: 16px;
+}
+.payment-blocks #error-block .error-total .total-amount span {
+  font-size: 80%;
+}
+.payment-blocks #error-block .error-total .total-description {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #6A6A6A;
+  margin: 0;
+}
+.payment-blocks #error-block .payment-method {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 20px 12px 20px;
+}
+.payment-blocks #error-block .payment-method .payment-method-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.payment-blocks #error-block .payment-method .payment-method-logo {
+  display: inline-block;
+  height: 40px;
+  max-width: 200px;
+}
+.payment-blocks #error-block .payment-method .payment-method-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+.payment-blocks #error-block .payment-method .payment-method-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-left: 25px;
+}
+.payment-blocks #error-block .payment-method .payment-method-hr {
+  background: #CECECE;
+  height: 1px;
+  width: 100%;
+}
+.payment-blocks #error-block .payment-method .payment-method-action {
+  margin-top: 12px;
+}
+.payment-blocks #error-block .payment-method .payment-method-action .btn {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  box-shadow: none !important;
+}
+.payment-blocks #error-block .actions {
+  margin-top: 30px;
+}
+.payment-blocks #error-block .actions .btn-success {
+  font-size: 20px;
+  padding: 16px 20px;
+  line-height: 32px;
+}
+.payment-blocks #error-block .actions .btn-default {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  padding: 16px 20px;
+  background: #FFF;
+  border-color: #FFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  color: #5A5A5A;
+}
+.payment-blocks #success-block .success-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 50px 0;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  color: #2A2A2A;
+}
+.payment-blocks #success-block .success-title span {
+  font-size: 90%;
+}
+.payment-blocks #success-block .success-title .merchant-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-blocks #success-block .success-title .merchant-name i {
+  color: #3AD664;
+}
+.payment-blocks #success-block .success-title .merchant-name p {
+  margin: 0;
+  margin-left: 32px;
+  font-weight: 500;
+}
+.payment-blocks #success-block .success-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px 0 50px 0;
+  border-left: 1px solid #BBBBBB;
+}
+.payment-blocks #success-block .success-info .amount-label {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #6A6A6A;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.payment-blocks #success-block .success-info .amount {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin-bottom: 28px;
+}
+.payment-blocks #success-block .success-info .amount span {
+  font-size: 80%;
+}
+.payment-blocks #success-block .payment-method-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+.payment-blocks #success-block .payment-method-info .payment-method-logo {
+  display: inline-block;
+  height: 40px;
+  max-width: 200px;
+}
+.payment-blocks #success-block .payment-method-info .payment-method-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+.payment-blocks #success-block .payment-method-info .payment-method-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-left: 25px;
+}
+.payment-blocks #success-block .success-total {
+  padding: 32px 0;
+  border-top: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
+}
+.payment-blocks #success-block .success-total .total-label {
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #6A6A6A;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.payment-blocks #success-block .success-total .total-amount {
+  font-size: 46px;
+  line-height: 54px;
+  letter-spacing: 0.08em;
+  color: #000;
+  margin: 0;
+}
+.payment-blocks #success-block .success-total .total-amount span {
+  font-size: 80%;
+}
+.payment-blocks .merchant-fields .amount {
+  letter-spacing: 0.08em;
+  color: #000000;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+}
+.payment-blocks .merchant-fields .total-amount {
+  color: #000000;
+  font-size: 24px;
+  line-height: 1;
+}
+.payment-blocks .merchant-fields .total-amount .amount {
+  display: inline-block;
+  margin: 0;
+}
+.payment-blocks .merchant-fields .shipping label {
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+}
+.payment-blocks .merchant-fields .shipping .shipping-label {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 25px);
+  padding-left: 5px;
+}
+.payment-blocks .merchant-fields .shipping .shipping-amount {
+  letter-spacing: 0.04em;
+  color: #000000;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+}
+.payment-blocks .merchant-fields .product {
+  border: 1px solid #ddd;
+  padding: 1.25rem 1.2rem 0.45rem 1.5rem;
+}
+.payment-blocks .merchant-fields .product label {
+  width: 100%;
+  line-height: 2;
+  user-select: none;
+  cursor: pointer;
+}
+.payment-blocks .merchant-fields .product .product-label {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 25px);
+  color: #242424;
+  padding-left: 5px;
+}
+.payment-blocks .merchant-fields .product .product-label span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.payment-blocks .merchant-fields .product .product-price {
+  letter-spacing: 0.04em;
+  color: #444;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  min-width: 136px;
+  text-align: right;
+}
+.payment-blocks .merchant-fields .label {
+  letter-spacing: 0.08em;
+  color: #2D2D2D;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.payment-blocks .merchant-fields select:invalid,
+.payment-blocks .merchant-fields select option[value=""] {
+  color: #6c757d;
+  opacity: 0.5;
+}
+.payment-blocks .btn {
+  text-transform: capitalize;
+}
+.payment-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9;
+}
+.payment-loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.95;
+}
+.payment-loader img {
+  z-index: 1;
+}
+.payment-loader .loader-timer {
+  color: #6A6A6A;
+  z-index: 1;
+}
+
+.welcome {
+  min-height: calc(100vh - 114px - 88px);
+}
+
+@media (max-width: 991px) {
+  .navbar .container {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  .payment-blocks .block {
+    min-height: calc(100vh - 98px - 74px - 3rem);
+    margin: 0 !important;
+  }
+  .payment-blocks .merchant-logo {
+    border: none;
+    box-shadow: none;
+  }
+  .payment-blocks .merchant-logo .merchant-name {
+    background-image: url('../img/payments/merchant.png');
+    background-position: center center;
+    padding: 20px 35px 12px 35px;
+    border-radius: 16px;
+  }
+  .payment-blocks .merchant-logo .merchant-name p {
+    margin: 0 0 7px;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  .payment-blocks .merchant-logo .merchant-name p img {
+    width: 15px;
+    margin-right: 10px;
+  }
+  .payment-blocks .merchant-logo .merchant-name h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .payment-blocks .merchant-logo .merchant-name p.amount-label {
+    display: block;
+    margin-top: 15px;
+  }
+  .payment-blocks .merchant-logo .merchant-name h3.amount {
+    display: block;
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  .payment-blocks .merchant-logo .merchant-name h3.amount small {
+    font-size: 70%;
+    font-weight: 300;
+  }
+  .payment-blocks .merchant-logo .merchant-name .hr {
+    display: block;
+    width: 20px;
+    border-top: 1px solid #FFFFFF;
+  }
+  .payment-blocks .merchant-logo .merchant-amount {
+    display: none;
+  }
+  .payment-blocks .merchant-logo .merchant-amount-logo {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 24px;
+    padding: 15px 12px 0;
+  }
+  .payment-blocks .merchant-logo .merchant-amount-logo p,
+  .payment-blocks .merchant-logo .merchant-amount-logo h3 {
+    display: none;
+  }
+  .payment-blocks .merchant-logo .merchant-amount-logo .method-label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8A8A8A;
+    padding: 0;
+    margin-top: 0;
+    border: none;
+  }
+  .payment-blocks .merchant-logo .merchant-amount-logo .method-hr {
+    background: #CECECE;
+    height: 1px;
+    width: 20px;
+  }
+  .payment-blocks .merchant-logo .merchant-amount .method-info {
+    justify-content: flex-start;
+    margin: 12px 0 0;
+  }
+  .payment-blocks .operators {
+    height: calc(100vh - 98px - 74px - 3rem - 310px);
+    margin-top: 12px;
+    border: none;
+    border-radius: 3px;
+  }
+  .payment-blocks .operators .operators-title {
+    padding: 18px 0;
+    border: none;
+  }
+  .payment-blocks .operators .operators-title p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+  }
+  .payment-blocks .operators .operators-list {
+    height: calc(100% - 57px);
+    padding: 0 14px;
+  }
+  .payment-blocks .operators .operator-item {
+    padding: 9px 32px 9px 18px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+  }
+  .payment-blocks .operators .operator-item .operator-item-img {
+    height: 42px;
+    width: 42px;
+    margin-right: 23px;
+  }
+  .payment-blocks .operators .operator-item .operator-item-img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .payment-blocks .operators .operator-item .operator-item-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .payment-blocks .operators .operator-item .operator-item-check {
+    right: 14px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D4D4D4;
+  }
+  .payment-blocks .operators .operator-item .operator-item-check i {
+    font-size: 9px;
+  }
+  .payment-blocks #step1-block .merchant-logo,
+  .payment-blocks #step1-block .operators {
+    min-height: 171px;
+  }
+  .payment-blocks .selected-operator {
+    padding: 15px 12px 0;
+    margin-top: 5px;
+    background: transparent;
+    box-shadow: none;
+  }
+  .payment-blocks .selected-operator .selected-operator-title {
+    padding-bottom: 12px;
+  }
+  .payment-blocks .selected-operator .selected-operator-title p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .payment-blocks .selected-operator .selected-operator-title p.muted {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .payment-blocks .selected-operator .selected-operator-title-hr {
+    width: 20px;
+  }
+  .payment-blocks .selected-operator-ussd-pull {
+    display: none;
+  }
+  .payment-blocks .selected-operator .selected-operator-logo {
+    height: 30px;
+    margin-top: 0;
+  }
+  .payment-blocks .selected-operator .selected-operator-name {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0 0 0 15px;
+  }
+  .payment-blocks .selected-operator .selected-operator-info {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .payment-blocks .selected-operator-ussd-push .selected-operator-info {
+    margin-bottom: 12px;
+  }
+  .payment-blocks .selected-operator-ussd-push .selected-operator-logo {
+    height: 38px;
+  }
+  .payment-blocks .selected-operator-ussd-push form,
+  .payment-blocks .merchant-fields form {
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+  .payment-blocks .selected-operator-ussd-push form .input-group-text,
+  .payment-blocks .merchant-fields form .input-group-text {
+    width: 40px;
+  }
+  .payment-blocks .selected-operator-ussd-push form input.form-control,
+  .payment-blocks .merchant-fields form .form-control {
+    height: 40px;
+  }
+  .payment-blocks .total {
+    background: #F5F5F5;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 12px;
+    margin: 0 12px !important;
+    border: 1px solid #CECECE;
+  }
+  .payment-blocks .total .fee-info {
+    display: block;
+    border-bottom: 1px solid #E8E8E8;
+  }
+  .payment-blocks .total .fee-info .fee-label {
+    margin: 0 0 10px;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 16px;
+  }
+  .payment-blocks .total .fee-info .fee-label span {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .payment-blocks .total .total-label {
+    margin: 10px 0 4px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .payment-blocks .total .total-amount {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .payment-blocks .actions {
+    margin-top: 32px;
+  }
+  .payment-blocks .actions .btn-success {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+  }
+  .payment-blocks #main-block .actions {
+    margin: 10px -3px 0 -3px !important;
+  }
+  .payment-blocks #main-block .actions-ussd {
+    display: block;
+  }
+  .payment-blocks #error-block .display {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    margin-bottom: 14px !important;
+  }
+  .payment-blocks #error-block .error-title {
+    margin: 18px 0;
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .payment-blocks #error-block .error-title .merchant-name {
+    flex-direction: column;
+  }
+  .payment-blocks #error-block .error-title .merchant-name i {
+    padding: 0 !important;
+    line-height: 1;
+    font-size: 40px;
+  }
+  .payment-blocks #error-block .error-title .merchant-name p {
+    margin: 0;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .payment-blocks #error-block .error-total {
+    margin: 0;
+    padding: 16px 0;
+    border-left: none;
+    border-top: 1px solid #E3E3E3;
+  }
+  .payment-blocks #error-block .error-total .total-label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .payment-blocks #error-block .error-total .total-amount {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 3px;
+  }
+  .payment-blocks #error-block .error-total .total-amount span {
+    font-size: 70%;
+  }
+  .payment-blocks #error-block .error-total .total-description {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .payment-blocks #error-block .payment-method {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 18px 33px 14px 33px;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-info {
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-logo {
+    height: 22px;
+    max-width: 200px;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-logo img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-name {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 12px;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-hr {
+    background: #E3E3E3;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-action {
+    margin-top: 14px;
+  }
+  .payment-blocks #error-block .payment-method .payment-method-action .btn {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
+  }
+  .payment-blocks #error-block .actions {
+    margin-top: 16px;
+  }
+  .payment-blocks #error-block .actions .btn-success {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+  }
+  .payment-blocks #error-block .actions .btn-default {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px;
+    margin-top: 5px !important;
+  }
+  .payment-blocks #success-block .display {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  }
+  .payment-blocks #success-block .success-title {
+    margin: 18px 0;
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .payment-blocks #success-block .success-title .merchant-name {
+    flex-direction: column;
+  }
+  .payment-blocks #success-block .success-title .merchant-name i {
+    padding: 0 !important;
+    line-height: 1;
+    font-size: 40px;
+  }
+  .payment-blocks #success-block .success-title .merchant-name p {
+    margin: 0;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .payment-blocks #success-block .success-info {
+    margin: 0;
+    padding: 16px 0;
+    border-left: none;
+    border-top: 1px solid #E3E3E3;
+  }
+  .payment-blocks #success-block .success-info .amount-label {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .payment-blocks #success-block .success-info .amount {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+  .payment-blocks #success-block .success-info .amount.fee {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+  .payment-blocks #success-block .success-info .amount span {
+    font-size: 70%;
+  }
+  .payment-blocks #success-block .payment-method-info {
+    align-items: center;
+    margin-top: 4px;
+  }
+  .payment-blocks #success-block .payment-method-info .payment-method-logo {
+    height: 20px;
+  }
+  .payment-blocks #success-block .payment-method-info .payment-method-name {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 12px;
+  }
+  .payment-blocks #success-block .success-total {
+    padding: 18px 0;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: none;
+  }
+  .payment-blocks #success-block .success-total .total-label {
+    font-size: 14px;
+    line-height: 16px;
+    color: #5A5A5A;
+    margin-bottom: 6px;
+  }
+  .payment-blocks #success-block .success-total .total-amount {
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .payment-blocks #success-block .success-total .total-amount span {
+    font-size: 70%;
+  }
+  .payment-blocks #success-block .actions {
+    margin-top: 18px;
+  }
+  .payment-blocks .merchant-fields .product {
+    padding: 0.25rem 0.75rem 0 0.75rem;
+    border: none;
+  }
+  .payment-blocks .merchant-fields .product .item {
+    border: 1px solid #E6E6E6;
+    padding: 0.5rem 0;
+  }
+  .payment-blocks .merchant-fields .product label {
+    margin-bottom: 0;
+  }
+  .payment-blocks .merchant-fields .product .product-price {
+    font-size: 18px;
+    text-align: left;
+  }
+  .payment-loader img {
+    width: 140px;
+  }
+}
