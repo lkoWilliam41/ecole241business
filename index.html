@@ -84,10 +84,10 @@
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown">Ingénieur Google Cloud</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Développez vos compétences grâce à notre formation</p>
-                                <a href="/googlecloud.html" class="discover py-md-3 px-md-5 me-3 animated slideInLeft">Découvrez notre formation</a>
-                                <a href="inscription.html" class="signup py-md-3 px-md-5 animated slideInRight">Je m'inscris</a>
+                                <h1 class="display-3 text-white animated slideInDown">Voulez-vous Travailler à la Silicon Valley ?</h1>
+                                <!-- <p class="fs-5 text-white mb-4 pb-2">Développez vos compétences grâce à notre formation</p> -->
+                                <a href="ingenieurlogiciel.html" id="yesiwant"  class="discover py-md-3 px-md-5 me-3 animated slideInLeft">Oui je le veux</a>
+                                <!-- <a href="inscription.html"  class="signup py-md-3 px-md-5 animated slideInRight">Je m'inscris</a> -->
                             </div>
                         </div>
                     </div>
@@ -100,10 +100,10 @@
                         <div class="row justify-content-start">
                             <div class="col-sm-10 col-lg-8">
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown"></h5>
-                                <h1 class="display-3 text-white animated slideInDown">Ingénieur Logiciel</h1>
-                                <p class="fs-5 text-white mb-4 pb-2">Développez vos compétences en ingénieurie logiciel</p>
-                                <a href="ingenieurlogiciel.html" class="discover py-md-3 px-md-5 me-3 animated slideInLeft">Découvrez notre formation</a>
-                                <a href="/inscription.html" class="signup py-md-3 px-md-5 animated slideInRight ">Je m'inscris</a>
+                                <h1 class="display-3 text-white animated slideInDown">Devenez Ingénieur Logiciel</h1>
+                                <!-- <p class="fs-5 text-white mb-4 pb-2">Développez vos compétences en ingénieurie logiciel</p> -->
+                                <a id="discover" href="ingenieurlogiciel.html" class="discover py-md-3 px-md-5 me-3 animated slideInLeft">Découvrez notre formation</a>
+                                <!-- <a href="/inscription.html" class="signup py-md-3 px-md-5 animated slideInRight ">Je m'inscris</a> -->
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,22 @@
     </div>
     <!-- Carousel End -->
 
-
+    <!-- Popup -->
+    <div class="popup">
+        <div class="body">
+            <div class="close">Fermer</div>
+            <h4 class="display"></h4>
+            <div class="img">
+                <img src="/img/book2.png" alt="">
+            </div>
+            <div class="text">Profiter de ce magnifique e-book qui vous aidera mieux comprendre le débugage.<p>
+            <div class="inputt">
+                <input type="email">
+            </div>
+            </p></div>
+            <a class="link" href="/img/book.jpg" download="Apprenez à débugger">Télécharger gratuitement</a>
+        </div>
+    </div>
     <!-- Service Start -->
 <!--     <div class="container-xxl py-5">
         <div class="container">
@@ -262,8 +277,8 @@
                     <h4 class="text-white mb-3">Newsletter</h4>
                     <p>Abonnez-vous à notre newsleter pour être informé de nos actualités.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="input" type="text" placeholder="Entrez votre email">
-                        <button type="button" class="btnn">Je m'inscris</button>
+                        <input id="inpt" class="input" type="text" placeholder="Entrez votre email">
+                        <button type="button" id="btn">Je m'inscris</button>
                     </div>
                 </div>
             </div>
@@ -306,6 +321,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>

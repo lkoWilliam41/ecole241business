@@ -61,15 +61,15 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nos formations</a>
                     <div class="dropdown-menu fade-down m-0">
                         <a href="googlecloud.html" class="dropdown-item">Ingénieur Google Cloud</a>
-                        <a href="ingenieurlogiciel.html" class="dropdown-item">Ingénieur Logiciel</a>
+                        <a id="ingelogiciel" href="ingenieurlogiciel.html" class=" dropdown-item">Ingénieur Logiciel</a>
                         <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
                     </div>
                 </div>
                 <a href="apropos.html" class="nav-item nav-link">A propos</a>
                 <a href="contact.html" class="nav-item nav-link">Contactez-nous</a>
             </div>
-           <a href="" class="join btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
+          <!--  <a href="" class="join btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div> -->
     </nav>
     <!-- Navbar End -->
 
@@ -143,18 +143,45 @@
             </div>
         </div>
     </div> 
-      
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h1 id="debouchetitre" class="mb-5">Quels sont les débouchés</h1>
+    </div>
+    <div class="row g-4">
+        
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+            <div class="position-relative h-100">
+                <img class="img-fluid position-absolute w-100 h-100" src="img/débouchés.png" alt="" style="object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+
+            <p id=""
+             class="debouche mb-4">
+                A la fin de cette formation, vous serez capabable de : <br>
+                <ul>
+                    <li>Concevoir et développer des logiciels grâce aux langages de programmation.</li>
+                    <li>Maîtriser le scripting</li>
+                    <li>Manager un projet</li>
+                    <li>Structurer son code en classes, fonctions et modules</li>
+                    <li>POO (Programmation Orientée Objet)</li>
+                </ul>
+            </p>
+            
+        </div>
+    </div>
+</div>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <!--  <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6> -->
-            <h1 class="mb-5">Quels sont les débouchés ?</h1>
+           <!--  <h1 class="mb-5">Quels sont les débouchés ?</h1>
             <p>L'ingénieur Google cloud est en charge du déploiement, du stockage et de la gestion de données sur des serveurs situés hors de l'entreprise. C'est un spécialiste des algorithmes, de la programmation et de l'architecture de logiciels.
             </p>
             <p>Au terme de la formation, vous serez apte à travailler à l'internationale grâce au à notre partenariat
                 avec Qwasar.
-            </p><br>
-            <h1 class="mb-5">Quelques entreprises avec lesquelles vous pourriez travailler ou collaborer</h1>
+            </p><br> -->
+            <h1 id="debouchetitre" class="mb-5">Quelques entreprises avec lesquelles vous pourriez travailler ou collaborer</h1>
             <div class="imgsilicon">
                 <img src="/img/template silicon valley.png" alt="">
             </div><br><br><br>
@@ -164,9 +191,9 @@
                     <h3 class="mb-5"><span class="red">ETAPE 1</span> : Pré-selection</h3>
                     <p>Pour prendre part à la formation, inscrivez-vous à la phase de pré-sélection (Bootcamp) qui aura lieu du 01 au 31 août 2022.
                     Elle s'étend sur 1 mois. Durant cette période, les apprenants pourront être écartés s'ils ne répondent pas à nos attentes.</p>
-                    <b>NB: La pré-selection se fait en ligne et en présentiel. <br>Coût de la pré-inscription : 50 000 FCA</b>
-                </p>
-                <button class="bootcamp">Je m'inscrit au Bootcamp</button>
+                    <!-- <b>NB: La pré-selection se fait en ligne et en présentiel. <br>Coût de la pré-inscription : 50 000 FCA</b>
+                </p> -->
+                <button class="bootcamp">Je m'inscris</button>
                 </div>
                 <div class="selection">
                     <h3 class="mb-5"><span class="red">ETAPE 2</span> : Début de la formation</h3>
@@ -336,7 +363,7 @@
         
 
     
-    <!-- Footer Start -->
+   <!-- Footer Start -->
    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="gridd">
@@ -364,8 +391,8 @@
                 <h4 class="text-white mb-3">Newsletter</h4>
                 <p>Abonnez-vous à notre newsleter pour être informé de nos actualités.</p>
                 <div class="position-relative mx-auto" style="max-width: 400px;">
-                    <input class="input" type="text" placeholder="Entrez votre email">
-                    <button type="button" class="btnn">Je m'inscris</button>
+                    <input id="inpt" class="input" type="text" placeholder="Entrez votre email">
+                    <button type="button" id="btn">Je m'inscris</button>
                 </div>
             </div>
         </div>
@@ -394,22 +421,20 @@
 </div>
 <!-- Footer End -->
 
+<!-- Back to Top -->
+<!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
 
 
-    <!-- Back to Top -->
-    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a> -->
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 
 </html>
